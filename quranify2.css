@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+const url="https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/96.mp3";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #624152;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+ 
+.nav {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    background: #624152;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+ 
+.nav p {
+    margin: 0;
+    padding: 0;
+}
+
+ 
+.logo,
+ 
+.contact,
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+ 
+.logo { flex: 1; min-width: 150px; gap:30%; 
+font-size:3vh;}
+.logo i{
+   margin-right:10px; 
+}
+ 
+.contact { flex: 2; min-width: 200px; gap: 10px; }
+.button { flex: 1; min-width: 160px; gap: 10px; }
+ 
+ 
+.nav img {
+    height: 6vh;
+    border-radius: 50%;
+}
+
+ 
+select, button {
+    background: #624152;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.logo i:hover{
+    opacity:0.5;
+
+}
+select {
+    padding: 3px;
+    border-radius: 3px;
+    border: .6px solid #eee;
+}
+
+.login {
+    background: white;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 6%;
+}
+
+.signin {
+    background: #C94277;
+    padding: 5px 12px;
+    border-radius: 6%;
+}
+
+.login:hover,
+.signin:hover,
+.play:hover,
+.next:hover,
+.back:hover,
+.pause:hover,
+.mute:hover {
+    transform: scale(1.09);
+}
+
+
+.container {
+    width: 100%;
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(0,0,0,0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:30px;
+     
+}
+.foryou{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    flex-wrap: wrap;
+}
+.foryou img{
+    height:210px;
+    width:150px;
+    border-radius:11px;
+}
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    width:100%;
+
+}
+.search {
+    display: flex;
+    align-items: center
+
+    
+
+}
+
+#searchInput {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    width: 250px;
+    background-color:#624152;
+    outline: none;      
+    box-shadow: none; 
+    color: #eee;
+}
+.img.highlight {
+    border: 2px solid #C94277;  
+    background-color: rgba(201, 66, 119, 0.2);  
+    border-radius: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+#searchBtn {
+    background-color:#624152;
+ 
+    font-size: 1.2rem;
+    cursor: pointer;
+   
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#searchBtn:hover {
+    opacity: 0.8;
+    font-size: 1.3rem;
+}
+
+.trending1,.trending2,.trending3,.trending4,.trending5,.trending6,.trending6,.trending7,.trending8,.trending9,.trending10,.trending11,.trending12{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content:center;
+    width:95%;
+   
+    border-radius:10px;
+    align-items: center;
+    gap:100px;
+}
+ 
+
+.trending1 img,.trending2 img,.trending3 img,.trending4 img,.trending5 img,.trending6 img,.trending6 img,.trending7 img,.trending8 img,.trending9 img,.trending10 img,.trending11 img,.trending12 img{
+    height:210px;
+    width:150px;
+    border-radius:11px;
+    padding:3px;
+    border: whi;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.playbutton{
+    width:100px;
+    background-color: #eee;
+    color:black;
+    border-radius:10px;
+   text-align: center;
+}
+
+.img i{
+    margin:3px;
+}
+.playbutton:hover{
+    opacity:0.5;
+}
+
+ 
+.bottom {
+    position: sticky;
+    bottom:0;
+    width: 100%;
+    height: 20vh;
+    color:white;
+    background-color:rgb(0,0,0,.9);
+    border: 4px solid #C94277;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.pop-up{
+    position: fixed;
+    bottom:23vh;
+    right:20vh;
+    width:300px;
+    height:4vh;
+    background-color: #eee;
+    color:black;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius:8px;
+
+}
+.hidden{
+    display:none;
+}
+
+.bottom input {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.playback {
+    display: flex;
+    gap: 50px;
+    margin: 10px 0;
+    font-size: 3vh;
+}
+
+ 
+@media (max-width: 992px) {
+    .logo,  .contact, .button {
+        flex: 1 1 45%;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav img { height: 5.5vh; }
+    .logo,   .contact, .button {
+        flex: 1 1 100%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav img { height: 5vh; }
+    select, button { font-size: 0.9rem; }
+}
